@@ -2,10 +2,7 @@
     color:red;
     background-color: purple;
     display: grid;
-    /* font-size: 5em; */
-    /* height: 100vh; */
-    /* width: 100vw; */
-    grid-template-columns: repeat(auto-fit,minmax(450px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(345px, 1fr));
     grid-template-rows: (8, 200px);
     grid-template-areas:    "header header header"
                             "nav    nav    nav"
@@ -24,7 +21,7 @@ img {
     object-fit: cover;
 }
 
-#header, #footer {
+#header, #footer, #nav, #ads, .pics {
     background-color: #9BCE1D;
 }
 
@@ -36,20 +33,16 @@ img {
 
 #nav {
     text-align: center;
-    background-color: #9BCE1D;
     grid-area: nav;
     font-size: 50px
 }
 
 .pics {
     text-align: center;
-    background-color: #9BCE1D;
     font-size: 20px;
-
 }
 
 #ads {
-    background-color: #9BCE1D;
     grid-area: ads;
 }
 
