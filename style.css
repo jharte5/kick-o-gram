@@ -1,6 +1,46 @@
 #app  {
     display: grid;
+    /* font-size: 5em; */
+    /* height: 100vh; */
+    /* width: 100vw; */
     grid-template-columns: repeat(auto-fit,minmax(450px, 1fr));
-    grid-template-rows: repeat(8,200px);
-    
+    grid-template-rows: (8, 200px);
+    grid-template-areas:    "header header header"
+                            "nav    nav    nav"
+                            "pics   pics   pics"
+                            "ads    .      ."
+                            "footer footer footer";
+    grid-gap: 1rem;
+}
+img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+#header, #footer {
+    background-color: #9BCE1D;
+}
+
+#header {
+    grid-area: header;
+    font-size: 200px;
+}
+
+#nav {
+    grid-area: nav;
+    font-size: 50px
+}
+
+.pics {
+    font-size: 20px;
+
+}
+
+#ads {
+    grid-area: ads;
+}
+
+#footer {
+    grid-area: footer;
 }
