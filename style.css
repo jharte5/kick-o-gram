@@ -1,4 +1,6 @@
 #app  {
+    color:red;
+    background-color: purple;
     display: grid;
     /* font-size: 5em; */
     /* height: 100vh; */
@@ -7,6 +9,10 @@
     grid-template-rows: (8, 200px);
     grid-template-areas:    "header header header"
                             "nav    nav    nav"
+                            "pics   pics   pics"
+                            "pics   pics   pics"
+                            "pics   pics   pics"
+                            "pics   pics   pics"
                             "pics   pics   pics"
                             "ads    .      ."
                             "footer footer footer";
@@ -23,24 +29,31 @@ img {
 }
 
 #header {
+    text-align: center;
     grid-area: header;
     font-size: 200px;
 }
 
 #nav {
+    text-align: center;
+    background-color: #9BCE1D;
     grid-area: nav;
     font-size: 50px
 }
 
 .pics {
+    text-align: center;
+    background-color: #9BCE1D;
     font-size: 20px;
 
 }
 
 #ads {
+    background-color: #9BCE1D;
     grid-area: ads;
 }
 
 #footer {
+    text-align: center;
     grid-area: footer;
 }
