@@ -55,7 +55,7 @@ img {
     color:red;
     background-color: purple;
     display: grid;
-    grid-template-columns: (2fr 145px);
+    grid-template-columns: (1fr 145px);
     grid-template-rows: (20fr 50px);
     grid-template-areas:    "header"
                             "nav"
@@ -107,6 +107,53 @@ img {
 }
 
 @media (min-width: 501px) && (max-width: 801px) {
+    #app {
+        color:red;
+        background-color: purple;
+        display: grid;
+        grid-template-columns: (2fr 145px);
+        grid-template-rows: (20fr 50px);
+        grid-template-areas:    "header"
+                                "nav"
+                                "pics"
+                                "pics"
+                                "pics"
+                                "pics"
+                                "pics"
+                                "pics"
+                                "pics"
+                                "pics"
+                                "pics"
+                                "pics"
+                                "pics"
+                                "pics"
+                                "pics"
+                                "pics"
+                                "pics"
+                                "ads    .      ."
+                                "footer";
+        grid-gap: 1rem;
+    
+        }
+        img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+        #header {
+            text-align: center;
+            grid-area: header;
+            font-size: 40px;
+        }
+        #nav {
+            text-align: center;
+            grid-area: nav;
+            font-size: 30px;
+        }
+        .pics {
+            text-align: center;
+            font-size: 20px;
+        }
 
 
 
